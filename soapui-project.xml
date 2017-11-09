@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="81e9f0e1-4a97-4174-9dc8-c273c76a3fa8"
+	activeEnvironment="Default" name="MyServer" soapui-version="5.2.1"
+	abortOnError="false" runType="SEQUENTIAL" resourceRoot=""
+	xmlns:con="http://eviware.com/soapui/config">
+	<con:settings>
+		<con:setting
+			id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="TestSuite" value="MyServer-Testsuite"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Save Project" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="TestCase" value="TestCase 1"/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="Endpoint" value=""/>
+</xml-fragment>]]></con:setting>
+	</con:settings>
+	<con:interface xsi:type="con:RestService"
+		id="4b53efe6-fcdd-41aa-b56d-bba6613e631f" wadlVersion="http://wadl.dev.java.net/2009/02"
+		name="http://localhost:8080" type="rest"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<con:settings />
+
+		<con:definitionCache type="TEXT" rootPart="" />
+		<con:endpoints>
+			<con:endpoint>http://localhost:8080</con:endpoint>
+		</con:endpoints>
+		<con:resource name="Hello" path="/MyServer/rest/hello"
+			id="6c59c894-d0af-4ccf-9419-57afa3955734">
+			<con:settings />
+			<con:parameters />
+			<con:method name="Hello" id="b0e9e046-926a-4890-b45e-076b297286c7"
+				method="GET">
+				<con:settings />
+				<con:parameters />
+				<con:representation type="RESPONSE">
+					<con:mediaType>text/plain</con:mediaType>
+					<con:status>200</con:status>
+					<con:params />
+					<con:element>data</con:element>
+				</con:representation>
+				<con:request name="Request 1" id="e8201c3d-d290-4465-b81f-472c9633ceef"
+					mediaType="application/json">
+					<con:settings>
+						<con:setting
+							id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request />
+					<con:originalUri>http://localhost/MyServer/rest/hello
+					</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT" />
+					<con:jmsPropertyConfig />
+					<con:parameters />
+					<con:parameterOrder />
+				</con:request>
+			</con:method>
+		</con:resource>
+		<con:resource name="emma" path="/MyServer/rest/emma/props"
+			id="95e387c3-2a1a-4853-a7df-71e99b58456c">
+			<con:settings />
+			<con:parameters />
+			<con:method name="Props" id="e1bf2c80-cf79-4f6c-87dd-8eef59fde209"
+				method="GET">
+				<con:settings />
+				<con:parameters />
+				<con:representation type="RESPONSE">
+					<con:mediaType>text/plain</con:mediaType>
+					<con:status>200</con:status>
+					<con:params />
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="FAULT">
+					<con:mediaType xsi:nil="true" />
+					<con:status>405</con:status>
+					<con:params />
+					<con:element>data</con:element>
+				</con:representation>
+				<con:request name="Request 1" id="be46753b-7b94-4799-97f3-0f710a7a9195"
+					mediaType="application/json">
+					<con:settings>
+						<con:setting
+							id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request />
+					<con:originalUri>http://localhost/MyServer/rest/emma
+					</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT" />
+					<con:jmsPropertyConfig />
+					<con:parameters />
+				</con:request>
+			</con:method>
+		</con:resource>
+		<con:resource name="dump" path="/MyServer/rest/emma/dump"
+			id="a5cf3ac4-e80d-4410-b6ce-2cc4c15de6a5">
+			<con:settings />
+			<con:parameters />
+			<con:method name="Dump" id="65ec6bbd-fb14-4f65-8fda-6b17a8707682"
+				method="POST">
+				<con:settings />
+				<con:parameters />
+				<con:representation type="RESPONSE">
+					<con:mediaType>text/plain</con:mediaType>
+					<con:status>200</con:status>
+					<con:params />
+					<con:element>data</con:element>
+				</con:representation>
+				<con:representation type="REQUEST">
+					<con:mediaType>application/json</con:mediaType>
+					<con:params />
+				</con:representation>
+				<con:request name="Request 1" id="de69c30f-3bb4-4aa0-94c3-75fd81700238"
+					mediaType="application/json" postQueryString="false">
+					<con:settings>
+						<con:setting
+							id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request />
+					<con:originalUri>http://localhost/MyServer/rest/emma/dump
+					</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT" />
+					<con:jmsPropertyConfig />
+					<con:parameters />
+				</con:request>
+			</con:method>
+		</con:resource>
+	</con:interface>
+	<con:testSuite id="bed03f71-d4e3-490f-965c-18002e2e467f"
+		name="MyServer-Testsuite">
+		<con:settings />
+		<con:runType>SEQUENTIAL</con:runType>
+		<con:testCase id="f77c8ece-0269-4278-81c6-09633fd7d4e9"
+			failOnError="true" failTestCaseOnErrors="true" keepSession="false"
+			maxResults="0" name="TestCase 1" searchProperties="true">
+			<con:settings />
+			<con:testStep type="restrequest" name="Hello"
+				id="2b7f1123-0eb0-47e1-b0ef-f3f0da656003">
+				<con:settings />
+				<con:config service="http://localhost:8080" methodName="Hello"
+					resourcePath="/MyServer/rest/hello" xsi:type="con:RestRequestStep"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+					<con:restRequest name="REST Request"
+						id="08466738-8d48-4c98-a8fc-bbdd50a6bb50" mediaType="application/json">
+						<con:settings>
+							<con:setting
+								id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+						</con:settings>
+						<con:encoding>UTF-8</con:encoding>
+						<con:endpoint>http://localhost:8080</con:endpoint>
+						<con:request />
+						<con:originalUri>http://localhost/MyServer/rest/hello
+						</con:originalUri>
+						<con:credentials>
+							<con:authType>No Authorization</con:authType>
+						</con:credentials>
+						<con:jmsConfig JMSDeliveryMode="PERSISTENT" />
+						<con:jmsPropertyConfig />
+						<con:parameters />
+						<con:parameterOrder />
+					</con:restRequest>
+				</con:config>
+			</con:testStep>
+			<con:testStep type="restrequest" name="Dump"
+				id="e6e0d4d1-bd59-41fe-a6a9-c4ece9468013">
+				<con:settings />
+				<con:config service="http://localhost:8080" resourcePath="/MyServer/rest/emma/dump"
+					methodName="Dump" xsi:type="con:RestRequestStep"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+					<con:restRequest name="Dump"
+						id="de69c30f-3bb4-4aa0-94c3-75fd81700238" mediaType="application/json"
+						postQueryString="false">
+						<con:settings>
+							<con:setting
+								id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+						</con:settings>
+						<con:endpoint>http://localhost:8080</con:endpoint>
+						<con:request />
+						<con:originalUri>http://localhost/MyServer/rest/emma/dump
+						</con:originalUri>
+						<con:credentials>
+							<con:authType>No Authorization</con:authType>
+						</con:credentials>
+						<con:jmsConfig JMSDeliveryMode="PERSISTENT" />
+						<con:jmsPropertyConfig />
+						<con:parameters />
+					</con:restRequest>
+				</con:config>
+			</con:testStep>
+			<con:properties />
+		</con:testCase>
+		<con:properties />
+	</con:testSuite>
+	<con:properties />
+	<con:wssContainer />
+	<con:oAuth2ProfileContainer />
+	<con:oAuth1ProfileContainer />
+	<con:sensitiveInformation />
+</con:soapui-project>
