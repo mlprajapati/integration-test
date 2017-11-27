@@ -90,3 +90,9 @@ Run the following build command and see the magic:
 mvn clean integration-test
 
 ```
+
+You can refer the 
+
+https://github.com/vinodmrhcl/integration-test-server
+
+for setting up a test server
