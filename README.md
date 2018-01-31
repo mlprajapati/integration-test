@@ -93,6 +93,6 @@ mvn clean integration-test
 
 You can refer the 
 
-https://github.com/vinodmrhcl/integration-test-server
+https://github.com/ers-hcl/integration-test-server
 
 for setting up a test server
